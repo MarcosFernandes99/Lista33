@@ -26,9 +26,9 @@ function OrganizarNumeros(numeroParametro:string): number{
     let array : string[]= numeroParametro.split("")
     console.log(array)
 
-    array.sort((a, b) => parseInt(b) - parseInt(a)    
+    array.sort((a, b) => parseInt(b) - parseInt(a))
 
-    return array.join("")
+    return parseInt(array.join(""))
    
 }
 

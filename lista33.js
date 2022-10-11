@@ -16,5 +16,5 @@ function OrganizarNumeros(numeroParametro) {
     var array = numeroParametro.split("");
     console.log(array);
     array.sort(function (a, b) { return parseInt(b) - parseInt(a); });
-    return array.join("");
+    return parseInt(array.join(""));
 }
