@@ -1,14 +1,35 @@
-//Bora Começar
+// //Bora Começar
+// // EXERCICIO 1
+// let palavra : string = "Camisa"
 
-let palavra : string = "Camisa"
+// console.log(ContarVogais(palavra))
 
-console.log(ContarVogais(palavra))
+// function ContarVogais(palavraParametro : string): number{
+//     let vogais : RegExp = /[aeiou]/ig
 
-function ContarVogais(palavraParametro : string): number{
-    let vogais : RegExp = /[aeiou]/ig
+//     let quantidadeVogais : number = palavraParametro.match(vogais)
 
-    let quantidadeVogais : number = palavraParametro.match(vogais)
+//     return quantidadeVogais.length
 
-    return quantidadeVogais.length
+// }
 
+// EXERCICIO 2
+
+// EXERCICIO 3
+
+let numero : string = "123456789"
+
+console.log(OrganizarNumeros(numero))
+
+function OrganizarNumeros(numeroParametro:string): string[]{
+    console.log(numeroParametro)
+    let array : string[]= numeroParametro.split("")
+    console.log(array)
+
+    array.sort((a, b) => b - a)    
+
+    return array.join("")
+   
 }
+
+
