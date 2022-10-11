@@ -21,12 +21,12 @@ let numero : string = "123456789"
 
 console.log(OrganizarNumeros(numero))
 
-function OrganizarNumeros(numeroParametro:string): string[]{
+function OrganizarNumeros(numeroParametro:string): number{
     console.log(numeroParametro)
     let array : string[]= numeroParametro.split("")
     console.log(array)
 
-    array.sort((a, b) => b - a)    
+    array.sort((a, b) => parseInt(b) - parseInt(a)    
 
     return array.join("")
    
